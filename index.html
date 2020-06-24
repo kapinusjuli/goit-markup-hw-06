@@ -428,52 +428,59 @@
  
    
   <form class="form js-speaker-form">
+
     <div class="form-field">
+      
+      <input class="form-input"
+      type="text"
+      name="name"
+      id="name"
+      placeholder=" "
+      autofocus
+      />
+      <label for="name" class="form-label">Имя</label>
+
       <svg class="icon-person icon-input" width=18px height=18px>
         <use href="./images/symbol-defs.svg#icon-person"></use>
       </svg>
-      <label for="name" class="form-label">Имя</label>
-      <input class="form-input"
-        type="text"
-        name="name"
-        id="name"
-        placeholder=" "
-        autofocus
-      />
     </div>
 
     <div class="form-field">
+      
+      <input class="form-input" type="tel" name="tel" id="tel" placeholder=" " />
       <label for="tel"  class="form-label">Телефон</label>
+
       <svg class="icon-phone icon-input" width=18px height=18px>
         <use href="./images/symbol-defs.svg#icon-phone"></use>
       </svg>
-      <input class="form-input" type="tel" name="tel" id="tel" placeholder=" " />
+
     </div>
 
     <div class="form-field">
+      
+      <input class="form-input" type="email" name="mail" id="mail" placeholder=" " />
       <label for="mail"  class="form-label">Почта</label>
       <svg class="icon-phone icon-input" width=18px height=18px>
         <use href="./images/symbol-defs.svg#icon-email"></use>
       </svg>
-      <input class="form-input" type="email" name="mail" id="mail" placeholder=" " />
     </div>
 
    
 
     <div class="form-field">
-      <label for="comment"  class="form-label-comment">Комментарий</label>
       <textarea
-        class="comment"
-        name="comment"
-        id="comment"
-        placeholder=" "
+      class="comment"
+      name="comment"
+      id="comment"
+      placeholder=" "
       ></textarea>
+      <label for="comment"  class="form-label-comment">Комментарий</label>
     </div>
 
     
 
-    <div class="form-field">
-      <input type="checkbox" name="policy" id="policy" />
+    <div class="form-field policy">
+      <input class="check" type="checkbox" name="policy" id="policy" />
       <label for="policy">
         <span  class="accept">
           Соглашаюсь с рассылкой и принимаю 
