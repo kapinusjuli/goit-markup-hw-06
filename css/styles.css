@@ -1157,6 +1157,7 @@ text-transform: none;
     top: 12px;
     left: 16px;
 
+
     font-weight: 400;
       font-size: 14px;
       line-height: 1.14;
@@ -1176,6 +1177,7 @@ text-transform: none;
 
 .policy {
     display: block;
+    border: 0;
 }
 /* 
 .check {
@@ -1191,6 +1193,7 @@ text-transform: none;
 } */
 
 .submit {
+    display: block;
     margin-right: auto;
     margin-left: auto;
     border: 0;
