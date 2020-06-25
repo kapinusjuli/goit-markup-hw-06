@@ -950,6 +950,7 @@ color: rgba(255, 255, 255, 0.6);
 
  .footer-follow {
      display: flex;
+
  }
 .follow-next{
     display: block;
@@ -975,10 +976,12 @@ color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
     line-height: 1.87em;
 
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
-       
+       .send {
+           margin-left: 10px;
+       }
 
 
 p.developed {
