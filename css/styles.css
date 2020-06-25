@@ -1051,7 +1051,8 @@ text-transform: none;
       
   }
 .close-icon {
-    margin: 0;
+    display: block;
+    margin: auto;
     padding: 0;
 }
 
@@ -1179,18 +1180,6 @@ text-transform: none;
     display: block;
     border: 0;
 }
-/* 
-.check {
-    display: inline-block;
-}
-
-.accept {
-    display: inline-block;
-}
-
-.agreement {
-    display: inline-block;
-} */
 
 .submit {
     display: block;
