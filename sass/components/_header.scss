@@ -1,4 +1,5 @@
 
+
 header a {color: $title-text-color-h}
 
 .nav{
@@ -18,41 +19,30 @@ header a {color: $title-text-color-h}
     letter-spacing: 0.03em;
     font-weight: 400;
      font-size: 26px;
-
-}
-
-.logo-left {
-    padding-right: 9px;
-    color: $accent-color;
-}
-
-.logo-right {
+     
+     &-left {
+        padding-right: 9px;
+        color: $accent-color;
+     }
+    &-right {
         color: #000000;}
+}
+
+
+
+
 
 .site-nav  {
     display: flex;
     align-items: center;
     
-}
 
-
-    site-nav-item > a { 
-        display: block; 
-        
-    
-    }
-    
-
-
-/*  
-.site-nav-item:not(:last-child) {
-padding-right: 50px;
-} */
-.site-nav-item:nth-last-child() {
+ 
+&-item:nth-last-child() {
     margin-right: 305px;
     }
 
-.site-nav .link {
+& .link {
      padding: 32px 25px;
 
      color: $title-text-color-h;
@@ -61,13 +51,13 @@ padding-right: 50px;
      font-size: 14px;
      line-height: 1.14;
 
-     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     transition: $transition-project;
 
          }
-.site-nav .link:hover {color: $accent-color;}
-.site-nav .link:focus {color: $accent-color;}
+& .link:hover {color: $accent-color;}
+& .link:focus {color: $accent-color;}
 
-.site-nav .link.current {
+& .link.current {
     color: $accent-color;
     
     padding: 32px 25px 32px 25px;
@@ -75,13 +65,14 @@ padding-right: 50px;
     
 
 }
+}
 
 .link-current {
     position: relative;
     color: #2196F3;
-}
 
-.link-current::after {
+
+&::after {
     position: absolute;
     display: inline-block;
     content: "";
@@ -90,15 +81,14 @@ padding-right: 50px;
     transform: translateX(-50%);
     margin-left: auto;
     margin-right: auto;
-
-        
-width: 100%;
-height: 4px;
-background-color: #2196F3;
-border-radius: 2px;
+    
+    width: 100%;
+    height: 4px;
+    background-color: #2196F3;
+    border-radius: 2px;
 }
 
-
+}
 .auth-nav{
      display: flex;
      align-items: center;
@@ -116,7 +106,7 @@ border-radius: 2px;
      }
 
 .auth-nav-item a {
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $transition-project;
 }     
 
      
@@ -203,6 +193,9 @@ border-radius: 2px;
 .button {
             width: 200px;
             height: 50px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            border: 0;
             
             
             color: $primary-text-color;
@@ -224,7 +217,7 @@ border-radius: 2px;
         text-align: center;
         border-width: 0px;
 
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: $transition-project;
 
     }
             
@@ -473,7 +466,7 @@ padding: 32px 15px 0px 15px;
     
     color: #AFB1B8;
 
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $transition-project;
 
 
 }
@@ -501,7 +494,7 @@ padding: 32px 15px 0px 15px;
     height: 44px;
     padding: 12px;
 
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $transition-project;
 
 }
 
@@ -541,7 +534,7 @@ padding: 32px 15px 0px 15px;
     width: 20px;
     height: 20px;
     fill: #AFB1B8;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $transition-project;
 
     
     
@@ -588,7 +581,7 @@ padding: 32px 15px 0px 15px;
         border-radius: 4px;
 
          
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: $transition-project;
 
     }
 
@@ -692,7 +685,7 @@ img{
     letter-spacing: 0.03em;
 
     transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform $transition-project;
     
     
 }
@@ -815,7 +808,7 @@ text-transform: uppercase;
     
     --color3: $primary-text-color;
 
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $transition-project;
 
 }
 
@@ -932,7 +925,7 @@ text-transform: none;
   }
 
   .modal{
-
+   
     position: absolute;
     top: 50%;
       left: 50%;
@@ -952,6 +945,17 @@ text-transform: none;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 4px;    
 
+  }
+
+  .overlay {
+    
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+           
+    background-color: rgba(0, 0, 0, 0.2);
   }
 
   .close {
@@ -1025,6 +1029,7 @@ text-transform: none;
       height: 120px;
     width: 448px;
     padding: 12px 16px;
+    
   }
 
   .checkbox {
@@ -1078,7 +1083,7 @@ border-radius: 4px;
       letter-spacing: 0.01em;
       color: $title-text-color;
 
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: $transition-project;
   }
  .icon-input {
      position: absolute;
@@ -1103,6 +1108,8 @@ border-radius: 4px;
       line-height: 1.14;
       letter-spacing: 0.01em;
       color: $title-text-color;
+
+      transition: $transition-project;
     
 }
 .form-field input {

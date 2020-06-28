@@ -58,14 +58,6 @@ header a {
           align-items: center;
 }
 
-site-nav-item > a {
-  display: block;
-}
-
-/*  
-.site-nav-item:not(:last-child) {
-padding-right: 50px;
-} */
 .site-nav-item:nth-last-child() {
   margin-right: 305px;
 }
@@ -77,8 +69,8 @@ padding-right: 50px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover {
@@ -133,8 +125,8 @@ padding-right: 50px;
 }
 
 .auth-nav-item a {
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth-nav-item a:hover {
@@ -198,6 +190,10 @@ padding-right: 50px;
 .button {
   width: 200px;
   height: 50px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
   color: #FFFFFF;
   background-color: #2196f3;
   font-weight: 700;
@@ -214,8 +210,8 @@ padding-right: 50px;
   line-height: 1.62em;
   text-align: center;
   border-width: 0px;
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .examples-button:hover {
@@ -434,8 +430,8 @@ padding-right: 50px;
   padding-bottom: 24px;
   margin: 0;
   color: #AFB1B8;
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .personal-links:hover {
@@ -473,8 +469,8 @@ padding-right: 50px;
   width: 44px;
   height: 44px;
   padding: 12px;
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-icon:hover {
@@ -516,8 +512,8 @@ padding-right: 50px;
   width: 20px;
   height: 20px;
   fill: #AFB1B8;
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-icon:hover svg {
@@ -556,8 +552,8 @@ padding-right: 50px;
   fill: #AFB1B8;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-icon {
@@ -652,10 +648,10 @@ img {
   letter-spacing: 0.03em;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item.portfolio:hover .portfolio-discription {
@@ -780,8 +776,8 @@ img {
   margin-bottom: 24px;
   margin-right: 10px;
   --color3: $primary-text-color;
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-icon-footer:hover {
@@ -910,6 +906,15 @@ p.developed {
   border-radius: 4px;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .close {
   position: absolute;
   top: 8px;
@@ -1027,8 +1032,8 @@ textarea {
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: #757575;
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-input {
@@ -1050,6 +1055,8 @@ textarea {
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: #757575;
+  -webkit-transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field input {
@@ -1112,6 +1119,7 @@ ul {
 }
 
 a {
+  display: block;
   text-decoration: none;
 }
 
